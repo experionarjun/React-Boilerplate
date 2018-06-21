@@ -1,5 +1,5 @@
 var config = {
-    entry: './src/index.js',
+    entry: './src/js/index.js',
     output: {
         path: __dirname + '/public',
         publicPath: '/',
@@ -20,6 +20,10 @@ var config = {
                 query: {
                     presets: ['es2015', 'react'] // use es2015 and react
                 }
+            },
+            {
+                 test:/\.(s*)css$/,
+                 use:['style-loader','css-loader', 'sass-loader']
             }
         ]
     }
