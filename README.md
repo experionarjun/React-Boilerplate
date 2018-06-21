@@ -1,5 +1,5 @@
-# Webpack Config
-Just a test repo to show webpack config for a react project.
+# React Boilerplate
+Boilerplate application for a react project run with Webpack and Eslint.
 
 Install dependencies
 ```
