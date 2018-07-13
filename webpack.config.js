@@ -1,11 +1,18 @@
 const path = require('path');
 
 const config = {
-  entry: './src/js/index.js',
+  entry: {
+    main: './src/js/index.js',
+    vendor: [
+      'react',
+      'react-dom',
+      'react-router-dom',
+    ],
+  },
   output: {
-    path: path.resolve(__dirname, '/public'),
+    path: __dirname + '/public',
     publicPath: '/',
-    filename: 'bundle.js',
+    filename: '[name].js',
   },
   devServer: {
     contentBase: './public',
