@@ -1,7 +1,7 @@
 # React Boilerplate
 Boilerplate application for a react project run with Webpack and Eslint.
 
-# Instaltation
+# Installation
 Install dependencies
 ```
 yarn install
